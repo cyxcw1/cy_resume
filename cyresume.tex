@@ -1,0 +1,118 @@
+%!TEX program = xelatex
+\documentclass[11pt,a4paper,nolmodern]{moderncv}
+\usepackage{xeCJK}
+\usepackage{info}
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{Minion Pro}
+\setsansfont[SlantedFont=* Italic, BoldFont=* Bold]{Minion Pro}
+%\setsansfont[SlantedFont=* Italic]{Myriad Pro}
+%\setCJKmainfont[BoldFont = SimHei, ItalicFont = KaiTi]{SimSun}
+%\setCJKsansfont{SimHei}
+%\setCJKmonofont{FangSong}
+\setCJKmainfont[BoldFont = SimHei, ItalicFont = KaiTi]{SimSun}
+\setCJKsansfont{KaiTi}
+\setCJKmonofont{KaiTi}
+
+\title{西安电子科技大学计算机学院}
+\myquote{励学，笃行，厚德，求真。}{}
+
+\begin{document}
+
+
+\hyphenpenalty=10000
+\maketitle
+
+\section{教育背景}
+\tlcventry{2012}{0}{西安电子科技大学，2015年毕业}{}{}{}{
+%\begin{itemize}
+ % \item 学位：工学硕士 \qquad 学院：计算机学院 \qquad 专业：计算机系统结构 \@\qquad 导师：崔江涛
+%\end{itemize}
+\begin{itemize}
+ \item \onech{学位：工学硕士}{学\quad\quad 院：计算机学院}{专业：计算机系统结构}{导\quad\quad 师：崔江涛}
+\end{itemize}
+}
+\vspace{0.5em}
+\tlcventry{2008}{2012}{西安电子科技大学}{}{}{}{
+%\begin{itemize}
+%  \item 学位：工学学士 \qquad 学院：计算机学院 \qquad 专业：计算机科学与技术 \qquad 专业排名：20\%
+%\end{itemize}}
+\begin{itemize}
+ \item \onech{学位：工学学士}{学\quad\quad 院：计算机学院}{专业：计算机科学与技术}{专业排名：Top 20\%}
+\end{itemize}}
+
+\section{能力}
+\subsection{开发}
+\cvlistitem{\small 熟练使用C/C++，Matlab，掌握C\#，了解JAVA，Python，Lua，Go等语言}
+\cvlistitem{\small 掌握基本算法，数据结构。熟悉Windows环境编程}
+\cvlistitem{\small 掌握OpenCV库，能使用OpenCV编写基本的图像处理程序}
+\cvlistitem{\small 掌握OpenGL库，能使用OpenGL进行基本的三维模型编程}
+\cvlistitem{\small 掌握Hadoop平台，能编写基于MapReduce计算框架的程序，了解Pig，Hive，Hbase的一些应用}
+\cvlistitem{\small 了解Linux环境与内核，并能在该环境进行基本的编程}
+
+\subsection{其他}
+% \cvcomputer{Office}{iWork, OpenOffice/LibreOffice, Microsoft Office}
+%            {操作系统}{Mac OS X, GNU/Linux(Ubuntu, Mint), Windows}
+% \cvcomputer{排版}{\XeLaTeX{}}
+%            {编辑器}{Sublime Text，VIM}
+\cvlistitem{
+	\onech{\small 代码管理：Git，SVN}{\small 数据库：SQL Server，MongoDB}{\small 排\quad\quad 版：\XeLaTeX{}}{\small 编辑器：Sublime Text，VIM}
+	% \twoch{代码管理：Git，SVN}{数据库：SQL Server，MongoDB}
+	% \onech{代码管理：Git，SVN}{数据库：SQL Server，MongoDB}{}{}
+	% \twoch{代码管理：Git，SVN}{数据库：SQL Server，MongoDB}
+}
+% \cvlistitem{
+% 	% \onech{排\quad\quad 版：\XeLaTeX{}}{编辑器：Sublime Text，VIM}{}{}
+% 	\twoch{排\quad\quad 版：\XeLaTeX{}}{编辑器：Sublime Text，VIM}
+% }
+
+\section{项目经历}
+\tlcventry{2013}{0}{影像姿态判读软件}{}{}{}{}
+\cvhobby{\textbf{项目描述}}{本项目为某基地无人机三维姿态测量的一套软件系统，主要利用光电经纬仪获得序列影像数据和航迹数据，以及结合光电经纬仪自身的姿态角（旋转角和俯仰角）以及空间坐标等数据信息，测量具体的飞机飞行姿态（俯仰角、翻滚角和偏航角）。}
+\cvhobby{\textbf{责任描述}}{主要负责轮廓线提取算法的设计与实现、轮廓线匹配算法的设计与实现、系统测试。}
+\vspace{0.5em}
+\tldatecventry{2013.06}{校园云音乐平台}{}{}{}{}
+\cvhobby{\textbf{项目描述}}{本平台结合当下流行的云计算技术，进行音乐的分布式存储和播放，保障音乐存储的拓展性和安全性，同时利用分布式计算框架实现音乐的热度排行榜，并结合当下的机器学习技术，挖掘用户可能喜欢的音乐并推荐。并能根据用户收听歌曲的历史数据，为用户推荐兴趣相类似的其他用户。参加华为产品孵化计划。}
+\cvhobby{\textbf{责任描述}}{平台搭建，推荐算法设计。}
+\vspace{0.5em}
+\tldatecventry{2012.11}{基于LSH和LSB方法的高维数据索引研究}{}{}{}{}
+\cvhobby{\textbf{项目描述}}{本项目旨在通过减少磁盘I/O次数、优化索引结构、数据降维的方法来提高高维数据索引的效率。}
+\cvhobby{\textbf{责任描述}}{完成了LSB的数据结构设计以及LSB和LSH的程序实现以及效率分析。}
+\vspace{0.5em}
+\tldatecventry{2012.04}{基于小波分析与结构相关性的图像增强算法的设计与实现}{}{}{}{}
+\cvhobby{\textbf{项目描述}}{通过小波分析的方法，对图像进行多层小波分解，分析分解后各层图像的结构相关性，来达到去除噪声，增强图像的目的。毕业设计。}
+\cvhobby{\textbf{责任描述}}{个人独立完成，包括算法与框架的设计和实现。}
+\vspace{0.5em}
+\tldatecventry{2011.05}{魔兽世界商业插件}{}{}{}{}
+\cvhobby{\textbf{项目描述}}{本项目基于Lua语言，制作与魔兽世界游戏里经济操作相关的插件，旨在方便游戏里的玩家，该插件属于游戏管理条例的合法范围。}
+\cvhobby{\textbf{责任描述}}{编写拍卖行各物品价格分析、物品快捷拍卖等功能，各频道自动喊话功能。}
+\vspace{0.5em}
+\tldatecventry{2010.11}{宿舍管理软件}{}{}{}{}
+\cvhobby{\textbf{项目描述}}{为方便宿舍同学日常生活，编写了该软件。参加校星火杯。}
+\cvhobby{\textbf{责任描述}}{个人独立编写完成，包括新闻模块、邮件模块、订水模块、宿舍卫生检查模块等。}
+\vspace{0.5em}
+\tldatecventry{2010.09}{全国大学生数学建模大赛}{}{}{}{}
+\cvhobby{\textbf{项目描述}}{为参加该比赛，前期做了基本的训练，9月10日参加比赛。}
+\cvhobby{\textbf{责任描述}}{各数学模型的算法的设计与实现。}
+\vspace{0.5em}
+\tldatecventry{2010.11}{班级论坛}{}{}{}{}
+\cvhobby{\textbf{项目描述}}{为活跃自己班级的气氛，增强班级的学术氛围，故在Discuz模板下做了这个班级论坛。}
+\cvhobby{\textbf{责任描述}}{使用当时比较火的PHP+Mysql+Apache组合，主要负责数据库模块和每周主题讨论模块。}
+
+\section{所获奖励}
+\mycvlanguage{2012.09}{校奖学金}{一等奖}
+\mycvlanguage{2010.10}{2010年全国大学生数学建模竞赛}{省级一等奖}
+\mycvlanguage{2010.04}{校ACM竞赛}{三等奖}
+\mycvlanguage{2010.12}{校星火杯}{三等奖}
+\mycvlanguage{2009.09}{校奖学金/院优秀学生}{三等奖}
+
+\section{语言}
+\mycvlanguage{英语}{CET6}{428}
+\mycvlanguage{英语}{CET4}{445}
+
+\section{个人兴趣}
+\cvhobby{运动}{足球，乒乓球，羽毛球，登山}
+\cvhobby{互联网}{\href{http://yusion.sinaapp.com/}{个人博客}，\href{http://blog.csdn.net/cyxcw1}{CSDN博客}，
+				 \href{http://weibo.com/u/2284680571}{新浪微博}，\href{https://github.com/cyxcw1}{GitHub}}
+\cvhobby{其他}{PC游戏，电影，读书}
+
+\end{document}

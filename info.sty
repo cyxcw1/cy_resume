@@ -1,0 +1,72 @@
+\ProvidesPackage{info}
+\RequirePackage{metalogo}
+
+% moderncv themes
+% show version
+\moderncvtheme[orange]{classic} % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+% print version
+%\moderncvtheme[black]{classic}
+%\moderncvtheme[green]{casual}   % idem
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+
+
+% personal data
+\firstname{姓}
+\familyname{名}
+\mobile{158XXXXXXXX}
+\email{tianlincy@126.com}
+\homepage{http://blog.csdn.net/cyxcw1}
+%\photo[64pt]{identity}
+
+
+\AtBeginDocument{\renewcommand{\labelitemi}{-- }}
+
+\usepackage[firstyear=2008,lastyear=2014]{moderntimeline}
+%\tlmaxdates{1999}{2012}
+\tlwidth{0.8ex}
+
+\usepackage{microtype}
+
+% Proper alignment
+\usepackage[originalcommands]{ragged2e}
+\renewcommand*{\cvcomputer}[4]{%
+  \cvdoubleitem{#1}{\small\raggedright#2}{#3}{\small\raggedright#4}}
+
+% Not all fonts have an sl shape
+\renewcommand*{\cventry}[6]{%
+  \cvline{#1}{%
+    {\bfseries#2}%
+    \ifx#3\else{, {\itshape#3}}\fi%
+    \ifx#4\else{, #4}\fi%
+    \ifx#5\else{, #5}\fi%
+    .%
+    \ifx#6\else{\newline{}\begin{minipage}[t]{\linewidth}\small#6\end{minipage}}\fi
+    }}%
+
+
+% Refine quote
+\newcommand*{\myquote}[2]{%
+   \quote{\itshape #1 \\ \scshape \footnotesize #2}}
+   
+\newcommand*{\mycvlanguage}[3]{\cvitemwithcomment[.25em]{#1}{#2}{#3}}
+
+% Hobbies
+\newcommand*{\cvhobby}[2]{\cvline{#1}{\small #2}}
+
+%分一行.
+\newcommand{\onech}[4]{
+\makebox[200pt][l]{#1} \hfill
+\makebox[200pt][l]{#2} \hfill
+\makebox[200pt][l]{#3} \hfill
+\makebox[200pt][l]{#4}\\}
+
+%\newcommand{\twoch}[2]{
+%  \makebox[200pt][l]{#1} 
+%  \makebox[200pt][l]{#2} 
+%}
+
+\newcommand{\twoch}[2]{
+  \indent\makebox[110pt][l]{#1} \hfill\makebox[220pt][l]{#2}\\
+}

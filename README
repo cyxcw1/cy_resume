@@ -1,0 +1,18 @@
+What is this
+------------
+
+This is a repository that contains my resume.
+
+Building
+--------
+
+The resume is optimized to be built into a PDF using xelatex.
+
+In order to achieve this, you need:
+
+   * A LaTeX distribution (TeXLive 2011 recommended);
+   * XeLaTeX;
+   * CTeX;
+   * MinionPro and MyriadPro fonts (you can find them with Acrobat Reader).
+
+You can alse build it in Windows and Linux.
